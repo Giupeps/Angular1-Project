@@ -1,6 +1,11 @@
-<a [routerLink]="['/todo']" routerLinkActive="router-link-active"
-  >Non completa</a
->
-<a [routerLink]="['/todocompleted']" routerLinkActive="router-link-active"
-  >Completati</a
->
+<nav>
+  <h1>ToDo List</h1>
+  <div>
+    <a [routerLink]="['/todo']" routerLinkActive="router-link-active"
+      >Non completati</a
+    >
+    <a [routerLink]="['/todocompleted']" routerLinkActive="router-link-active"
+      >Completati</a
+    >
+  </div>
+</nav>

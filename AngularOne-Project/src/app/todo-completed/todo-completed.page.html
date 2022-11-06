@@ -3,7 +3,7 @@
 <div *ngIf="TimeoutPage === true">
   <h2 *ngIf="complArr.length === 0">Non ci sono Task completate</h2>
   <h2 *ngIf="complArr.length >= 1">Task Completate</h2>
-  <div>
+  <div class="list" *ngIf="complArr.length >= 1">
     <ul>
       <li *ngFor="let element of complArr">{{element.title}}</li>
     </ul>

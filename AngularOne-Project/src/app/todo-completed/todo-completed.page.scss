@@ -1,0 +1,38 @@
+h1 {
+  color: #38a3a5;
+  font-size: 3em;
+}
+h2 {
+  color: #38a3a5;
+  font-size: 1.5em;
+}
+.list {
+  border: 1px solid black;
+  width: 43%;
+  margin: 0 auto;
+  background-color: rgb(199, 249, 204);
+  margin-top: 2vh;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+
+  ul {
+    padding: 0 2vh;
+  }
+
+  li {
+    list-style: none;
+    margin: 0.3vh auto;
+    color: #38a3a5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+      height: 3vh;
+      background-color: #38a3a5;
+      color: #c7f9cc;
+      border: none;
+    }
+  }
+}

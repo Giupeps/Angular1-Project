@@ -1,0 +1,28 @@
+nav {
+  text-align: center;
+  padding: {
+    bottom: 2vh;
+  }
+  h1 {
+    color: #38a3a5;
+    font-size: 3em;
+    margin: 2vh auto;
+  }
+
+  div {
+    margin: 2vh auto;
+  }
+
+  a {
+    margin: {
+      right: 6vh;
+    }
+    color: #c7f9cc;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  a:hover {
+    cursor: pointer;
+  }
+}

@@ -1,15 +1,22 @@
 <app-header></app-header>
 <h1 *ngIf="TimeoutPage === false">Attendi...</h1>
-<div *ngIf="TimeoutPage === true">
-  <div *ngIf="arrTask.length === 0">Ops, non ci sono Task</div>
-  <input type="text" [(ngModel)]="inputTask" />
-  <button (click)="addTask()">Invia</button>
+<div id="container" *ngIf="TimeoutPage === true">
+  <div class="text" *ngIf="arrTask.length === 0">
+    Ops, non ci sono Task, inseriscine una
+  </div>
+  <div class="form">
+    <input type="text" [(ngModel)]="inputTask" />
+    <button (click)="addTask()">Invia</button>
+  </div>
 
-  <div *ngIf="arrTask.length >= 1">
+  <div class="list" *ngIf="arrTask.length >= 1">
     <ul>
-      <li *ngFor="let element of arrTask">
-        {{element.title}}<button (click)="doneTask(element)">Done</button
-        ><button type="button" (click)="removeTask(element)">X</button>
+      <li class="text" *ngFor="let element of arrTask">
+        {{element.title}}
+        <div>
+          <button (click)="doneTask(element)">Done</button
+          ><button id="delete" (click)="removeTask(element)">X</button>
+        </div>
       </li>
     </ul>
   </div>

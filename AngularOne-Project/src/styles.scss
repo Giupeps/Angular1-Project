@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Signika", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #22577a;
+  text-align: center;
+}
